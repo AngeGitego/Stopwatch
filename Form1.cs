@@ -16,38 +16,7 @@ namespace Stopwatch
             InitializeComponent();
         }
 
-        // Timer Tick Event to update time every second
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (!isPaused)
-            {
-                seconds++;
-                if (seconds >= 60)
-                {
-                    seconds = 0;
-                    minutes++;
-                }
-                if (minutes >= 60)
-                {
-                    minutes = 0;
-                    hours++;
-                }
-                label1.Text = $"{hours:D2}:{minutes:D2}:{seconds:D2}";
-            }
-        }
 
-        // Start Button Click Event
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-            isPaused = false;  // Ensure it's not paused
-        }
-
-        // Pause Button Click Event
-        private void btnPause_Click(object sender, EventArgs e)
-        {
-            isPaused = true;  // Pause the timer
-        }
 
         // Resume Button Click Event
         private void btnResume_Click(object sender, EventArgs e)
