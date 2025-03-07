@@ -25,3 +25,6 @@ A simple and user-friendly **Stopwatch Application** built using **C# Windows Fo
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
+Team Members 
+Akunyiba Chimdalu
+Kevine Gitego
